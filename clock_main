@@ -1,4 +1,4 @@
-int N = 10000000;
+	int N = 10000000;
 	int h = 0; int mm = 0; int ss = 0;
 	cin >> N;
 
@@ -16,6 +16,9 @@ int N = 10000000;
 				cout << mm << ":";
 		}
 	}
+	else
+		cout << mm << ":";
+
 	if (ss<10) {
 		if (ss < 10 && ss != 0)
 			cout << "0" << ss << " ";
@@ -26,5 +29,5 @@ int N = 10000000;
 				cout << ss << " ";
 		}
 	}
-if (mm > 10) cout << mm << ":";
-if (ss > 10) cout << ss << " ";
+	else
+		cout << ss << " ";

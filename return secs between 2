@@ -1,0 +1,22 @@
+	int h1 = 0, mm1 = 0, ss1 = 0, h2 = h1, mm2 = mm1, ss2 = ss1;
+	int res;
+	cin >> h1 >> mm1 >> ss1 >> h2 >> mm2 >> ss2;
+	
+	while (mm1 > mm2 || ss1 > ss2) {
+		if (mm1 > mm2)
+		{
+			h2 = h2 - 1;
+			mm2 = mm2 + 60;
+		}
+
+		if (ss1 > ss2)
+		{
+			
+			mm2 = mm2 - 1;
+			ss2 = ss2 + 60;
+		}
+	}
+
+
+	res = (h2 - h1) * 3600 + (mm2 - mm1) * 60 + (ss2 - ss1);
+	cout<<res<<" ";

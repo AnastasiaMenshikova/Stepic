@@ -1,0 +1,28 @@
+int N = 10000000;
+	int h = 0; int mm = 0; int ss = 0;
+	cin >> N;
+
+	h = N % 86400 / 3600;
+	mm = N % 3600 / 60;
+	ss = N % 3600 % 60;
+	cout << h << ":";
+	if (mm < 10) {
+		if (mm < 10 && mm != 0)
+			cout << "0"<<mm<<":";
+		else {
+			if (mm == 0)
+				cout << "00:";
+			else
+				cout << mm << ":";
+		}
+	}
+	if (ss<10) {
+		if (ss < 10 && ss != 0)
+			cout << "0" << ss << " ";
+		else {
+			if (ss == 0)
+				cout << "00";
+			else
+				cout << ss << " ";
+		}
+	}

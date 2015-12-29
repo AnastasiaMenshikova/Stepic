@@ -1,0 +1,14 @@
+int main()
+{
+	int a, i, p;
+	cin >> a;
+
+	for (i = 2; a>1; ) {
+		if (a%i == 0) {
+			cout << i << " ";
+			a /= i;
+		}
+		else i++;
+	}
+    return 0;
+}
